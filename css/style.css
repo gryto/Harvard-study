@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@100;200;300&family=Work+Sans:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width:190px;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-size: 23px;
+    font-family: work sans;
+    font-weight: 500;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6) ;
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0.45), 
+        rgba(255, 255, 255, 0.45)
+      ),
+      url(../img/bg-harvard.jpg)no-repeat 50% 50% ; 
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+/* Navbar*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+}
+nav.hidden {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    /*padding: 15px 40px;*/
+    height: 70px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;  
+    transition: ls;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.8em;
+
+}
+
+nav ul li a.active{
+    background: black;
+    color: white;
+    padding: 30px 30px;
+    border: transparent;
+    margin: 0 10px;
+}
+
+
+nav ul li a:hover{
+    background: black;
+    color: white;
+    padding: 30px 30px;
+    border: transparent;
+    margin: 0 10px;
+}
+
+
+nav #icon{
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: IbarraRealNova;
+    font-size: 67px;
+  }
+.centered2 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: work sans;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+  }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-container{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.content{
+    width: 80%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: work sans;
+    font-weight: 400;
+}
+
+/* Scroll stuf*/
+.scroll-down header{
+    transform: translate(0, -100%, 0);
+}
+.scroll-up header{
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+
+
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav li{
+        color: white;
+    }
+    nav a{
+        font-size: 17px;
+    } 
+}
+
+@media (max-width: 768px){
+    nav #icon{
+        display: inline-flex;
+        color: white;
+    }
+    nav ul{
+        color: white;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:rgba(0, 0, 0, 0.6);
+        top: 70px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav li{
+        display: block;
+        margin: 60px 0;
+        line-height:  30px;
+        color: white;
+    } 
+    nav a{
+        font-size: 20px;
+    }
+    .flex-container {
+        flex-direction: column;
+      }
+    a.active{
+        border: none;
+        color: white;
+    }
+    a:hover{
+        border: 2px solid rgb(196, 196, 196);
+        color: white;
+    }
+    nav ul.show{
+        left: 0;
+
+    }
+}
+
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 16px 70px -8px rgba(0,0,0,0.25);
+    transition: background 0.3s linear;
+}
+
+.content-footer2{
+    max-width: 100%;
+    padding: 30px 40px;
+    margin: auto;
+}
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profil .logo-area{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profil lofo-area img{
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.logo-area .logo-name{
+    font-size: 1.5 rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    color: #000;
+}
+
+.desc-area{
+    max-width: 320px;
+    margin-bottom: 1.25rem;
+}
+.desc-area p{
+    color: #828282;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.social-media a{
+    color: #828282;
+    margin-right: 22px;
+    font-size: 24px;
+}
+
+
+.social-media a:hover{
+    color: #313131;
+}
+
+.service-area{
+    display: flex;
+}
+
+.service-header{
+    margin-right: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+
+li.service-name{
+    color: #000;
+    font-weight: 600;
+}
+
+.service-header li a{
+    color: #828282;
+    padding-bottom: 1px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.service-header li a:hover{
+    color: #313131;
+    text-decoration: none;
+}
+
+.service-header li {
+    margin-bottom: 10px;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background-color: #828282;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.copy-right{
+    color: #828282;
+    display: flex;
+    align-items: center;
+}
+.copy-right span{
+    margin-left: 8px;
+    font-weight: 400;
+    letter-spacing: 0.135rem;
+}
+
+.tou a{
+    color: #828282;
+    margin-left: 1.5 rem;
+}
+.tou a:hover{
+    color: #313131;
+}
+
+
+@media screen and(max-width: 768px){
+    .content-footer{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .service-area{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .service-header{
+        margin-left: 0;
+        margin-right: 40px;
+    }
+    .social-media{
+        margin-bottom: 1rem;
+    }
+    .footer-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .service-header{
+        margin-bottom: 8px;
+    }
+    .copy-right{
+        margin-bottom: 8px;
+    }
+    
+}
