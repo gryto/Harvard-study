@@ -4,7 +4,7 @@ class MyHeader extends HTMLElement{
         <header>
             <nav>
                 <div class="logo">
-                    <h4><img src="../img/Harvard_University_logo.svg.png" alt="Logo"></h4>
+                    <h4><img src="../../Harvard-study/img/Harvard_University_logo.svg.png" alt="Logo"></h4>
                 </div>
 
                 <ul class="flex-container">
@@ -35,7 +35,7 @@ class MyFooter extends HTMLElement{
                     <div class="content-footer">
                         <div class="profil">
                             <div class="logo-area">
-                                <img src="../img/logo2.png" alt="">
+                                <img src="../../Harvard-study/img/Harvard_University_logo.svg.png" alt="">
                                 <span class="logo-name">Harvard University</span>
                             </div>
                             <div class="desc-area">
